@@ -28,6 +28,10 @@ You are a Rossum.ai Solution Architect creating comprehensive technical document
      - Custom extensions reveal where standard Rossum features weren't enough
      - `hook.settings` and variable names reveal business-specific logic
      - Conditional logic reveals edge cases the business encounters
+     - Formula file names and `export__` prefixes reveal downstream field mapping requirements
+     - Labels reveal operational workflow stages and routing logic
+     - Multi-environment setup (dev/test/prod) reveals deployment maturity
+     - Country-specific queues reveal regional regulatory or business differences
 
 3. **Produce the documentation** as a markdown file named `DOCUMENTATION-[customer-or-folder-name].md` with:
 
@@ -77,9 +81,16 @@ For each section and field:
 (Repeat for each extension)
 
 ## Formula Fields
+Formula fields are Python files (`.py`) in `formulas/` subdirectories of each queue. Common categories include data normalization, field calculations, export mappings (often prefixed `export__`), MDH lookup helpers, and email metadata extraction.
+
 For each formula:
 - **Calculation**: What it computes
 - **Business reason**: Why this derived value is needed
+- **Category**: Normalization / calculation / export mapping / MDH lookup / routing
+
+## Labels & Email Templates
+- **Labels**: What tags exist and how they are used (priority, status, department routing)
+- **Email templates**: What notifications are sent and when (rejection, status changes, import failures)
 
 ## Master Data Hub
 - **Datasets**: What reference data is loaded and from where
@@ -101,7 +112,8 @@ For each rule:
 - **Data flow**: What data moves in which direction and why
 
 ## Operational Notes
-- **Sandbox setup**: Development/deployment workflow
+- **Environments**: How many orgs/environments exist (dev, test, prod) and their purpose
+- **Deployment workflow**: How changes flow between environments (deploy YAML files, prd_config.yaml)
 - **Inbox configuration**: Email routing and filtering logic
 - **Monitoring**: How issues are detected
 
