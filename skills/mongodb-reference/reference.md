@@ -29,8 +29,7 @@ Here `{sender_vat}` is replaced with the actual extracted VAT number before the 
 Placeholders support pipe modifiers for transforming values before substitution:
 
 - `{field | re}` or `{field | regex}` — escapes regex special characters so the value can be safely used inside `$regex`
-- `{field | lower}` — lowercases the value
-- `{field | upper}` — uppercases the value
+- `{field | split('delimiter')}` — splits the value by the given delimiter and uses the resulting array (e.g., `{order_id_normalized | split(',')}`)
 
 Example:
 ```json
