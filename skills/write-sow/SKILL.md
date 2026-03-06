@@ -50,3 +50,21 @@ Use these as a guide when structuring the deliverables table. Not all apply to e
 - **Integration** — ERP connector, API integration, SSO setup
 - **User Configuration** — roles, permissions, workspace structure
 - **Training & Handoff** — user training sessions, admin documentation, go-live support
+
+## Delivery Plan Guidance
+
+The typical project duration is ~13 weeks. Use these rough estimates when assigning durations in the Delivery Plan (adjust based on scope and complexity):
+
+| Category | Typical Duration |
+|----------|-----------------|
+| Queue & Schema Configuration | 1–2 weeks |
+| AI Extraction Setup / DE Training | 2–4 weeks (includes annotation cycles) |
+| Extensions & Automation | 1–3 weeks |
+| Master Data Hub | 1–2 weeks |
+| Business Rules | 1 week |
+| Export Pipeline | 1–2 weeks |
+| Integration (ERP/SSO) | 2–3 weeks |
+| UAT & Bug Fixes | 2–3 weeks |
+| Training & Go-live | 1 week |
+
+Some deliverables can run in parallel (e.g., MDH setup alongside schema configuration). Reflect this in the Delivery Plan — parallel items can share the same "Depends On" predecessor rather than being sequential.
