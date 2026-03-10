@@ -34,6 +34,7 @@ You are a Rossum.ai Solution Architect writing a Statement of Work. Generate a S
 - Use defined terms from [defined-terms.md](defined-terms.md) where appropriate.
 - Use bold sparingly — only for critical callouts. Prefer plain text for regular prose.
 - In deliverables, prefer paragraph descriptions. Use numbered or bullet point lists where they improve clarity. Do not use blockquotes.
+- Keep deliverables concise — specific enough to be measurable and verifiable, but not so detailed that they prescribe implementation. A few sentences per deliverable is typical.
 
 ## Common Rossum Deliverable Categories
 
