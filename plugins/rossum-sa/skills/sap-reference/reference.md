@@ -48,7 +48,7 @@ SAP's answer to VIM. Early stage, limited capabilities, inferior to VIM.
 ### SAP BTP (Business Technology Platform)
 - Cloud platform with many components; most important: Integration Suite (formerly CPI)
 - Integration platform like Mulesoft, Azure Logic Apps, UiPath
-- Rarely used by customers (rarely used)
+- Rarely used by customers
 
 ### SAP Cloud Connector
 Reverse proxy installed on-prem allowing BTP to connect to on-prem SAP. Rarely used (BTP is rare, S4 supports HTTPS natively).
@@ -85,7 +85,7 @@ SAP Web framework for business applications. Used by both Private and Public Clo
 
 ## Rossum-SAP Implementation Examples
 
-| Customer | Integration Pattern | Master Data | Export |
+| Example | Integration Pattern | Master Data | Export |
 |----------|-------------------|-------------|--------|
 | **Customer A** | HTTPS XML API via CPI | Synced by customer via MDH API | Rossum pushes sales order to CPI |
 | **Customer B** | SFTP-based | Pulled from same SFTP | IDOCs generated and placed on SFTP |
